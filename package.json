@@ -1,0 +1,15 @@
+{
+  "name": "quiz-app-haderach-server",
+  "version": "1.0.0",
+  "description": "API server and web client for a Dune related quiz",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

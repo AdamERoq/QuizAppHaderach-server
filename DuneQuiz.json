@@ -1,0 +1,167 @@
+[
+    {
+        "question": "Who is the author of the book 'Dune'?",
+        "options": ["Louis Aragon", "Frank Herbert", "J. R. R. Tolkien"],
+        "answer": 1
+    },
+    {
+        "question": "Who is the primary protagonist in Dune?",
+        "options": ["Duke Leto", "Shaddam Corrino IV", "Paul Atreides"],
+        "answer": 2
+    },
+    {
+        "question": "What year is the story set in?",
+        "options": ["3051", "8743", "10191"],
+        "answer": 2
+    },
+    {
+        "question": "What is the other name of the planet Dune?",
+        "options": ["Arrakis", "Kaitain", "Caladan"],
+        "answer": 0
+    },
+    {
+        "question": "Which kind of planet is the planet Arrakis?",
+        "options": ["A desert planet", "An ocean planet", "A mountain planet"],
+        "answer": 0
+    },
+    {
+        "question": "Because it never rains on the planet Arrakis, what do most of the native birds drink?",
+        "options": ["Oil", "Blood", "Urine"],
+        "answer": 1
+    },
+    {
+        "question": "What is the relationship between Jessica and Duke Leto?",
+        "options": ["She is his concubine", "She is his daughter", "She is his sister"],
+        "answer": 0
+    },
+    {
+        "question": "Why did Bene Gesserit plan the breeding program?",
+        "options": ["To create a child for the royal power", "To create a hybrid between human and sandworm", "To create a super-being called the Kwisatz Haderach"],
+        "answer": 2
+    },
+    {
+        "question": "At the end of the book, which seat of power does Paul take?",
+        "options": ["God", "Emperor", "Warrior"],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following characters betrays Duke Leto?",
+        "options": ["Duncan Idaho", "Dr. Wellington Yueh", "The Shadout Mapes"],
+        "answer": 1
+    },
+    {
+        "question": "Each house fights with each other to gain control over which valuable resource, which can power interstellar travel?",
+        "options": ["Spice Melange", "Dark Metal", "Space Titanium"],
+        "answer": 0
+    },
+    {
+        "question": "Early in the novel, which of the following weapons almost kills Paul?",
+        "options": ["A crysknife", "A stone crusher", "A hunter-seeker"],
+        "answer": 2
+    },
+    {
+        "question": "How can the Fremen of Arrakis ride giant sandworms?",
+        "options": ["With parasails", "With maker hooks", "With hypnosis"],
+        "answer": 1
+    },
+    {
+        "question": "What can happen if you consume an excessive amount of the spice melange?",
+        "options": ["It may reduce your sense of taste", "It may make you high", "It may turn your eyes blue"],
+        "answer": 2
+    },
+    {
+        "question": "What is a muad'dib?",
+        "options": ["A type of plant in the ocean", "A vehicle", "A species of mouse in the desert"],
+        "answer": 2
+    },
+    {
+        "question": "In which country was the 2021 movie Dune filmed to create the ocean planet Caladan?",
+        "options": ["Norway", "Jordan", "Madagascar"],
+        "answer": 0
+    },
+    {
+        "question": "What is the colour of the Koranjiyana Zenchristian Scriptures, one of the most important religious texts in the galaxy?",
+        "options": ["Black", "Yellow", "Orange"],
+        "answer": 2
+    },
+    {
+        "question": "Which history battle forever divided House Harkonnen and House Atreides?",
+        "options": ["Battle of Rossak", "Battle of Corrin", "Battle of the Bulge"],
+        "answer": 1
+    },
+    {
+        "question": "Which animal is the symbol of House Harkonnen?",
+        "options": ["Griffin", "Unicorn", "Dragon"],
+        "answer": 0
+    },
+    {
+        "question": "Which physical feature identifies a human computer, also known as Mentat?",
+        "options": ["Red-stained lips", "Bright orange hair", "Green eyes"],
+        "answer": 0
+    },
+    {
+        "question": "What does the word 'Sietch' mean in the Fremen term?",
+        "options": ["A party", "A village", "A forest"],
+        "answer": 1
+    },
+    {
+        "question": "Who is the younger sister of Paul Atreides?",
+        "options": ["Alia Atreides", "Alodin Atreides", "Aluari Atreides"],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following sensations does Paul Atreides NOT feel when he puts his hand into 'the box'?",
+        "options": ["Cold", "Prickling", "Painful"],
+        "answer": 2
+    },
+    {
+        "question": "Once a crysknife is drawn, it may not be resheathed again until ...",
+        "options": ["It had drawn blood", "It had been cleaned properly", "It had been blessed with a pray"],
+        "answer": 0
+    },
+    {
+        "question": "What is the name of the moisture-capturing, full-body suits worn by the Fremen?",
+        "options": ["Fedaykin", "Stillsuits", "Gom jabbars"],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following is NOT among the Great Houses of the Landsraad?",
+        "options": ["House Atreides", "House Acheans", "House Corrinos"],
+        "answer": 1
+    },
+    {
+        "question": "What is the last requirement for Paul Atreides before he may become a full Fremen?",
+        "options": ["To kill a Harkonnen", "To use a thumper", "To ride a sandworm"],
+        "answer": 2
+    },
+    {
+        "question": "What happens to the body of a Fremen after their death?",
+        "options": ["It is rendered down for the water", "It is left for the sandworms", "It is buried in a sacred cave"],
+        "answer": 0
+    },
+    {
+        "question": "What is the Duke's cause of death?",
+        "options": ["Assassination", "Heart attack", "Poisonous gas"],
+        "answer": 2
+    },
+    {
+        "question": "Why do the Fremen like Paul and Jessica?",
+        "options": ["Because they can speak their language", "Because they have special abilities", "Because they have healing powers"],
+        "answer": 1
+    },
+    {
+        "question": "What is the new position of Duke on the planet Arrakis?",
+        "options": ["A policeman", "A governor", "A judge"],
+        "answer": 1
+    },
+    {
+        "question": "Complete the following saying by the Fremen: 'God created Arrakis to ...'",
+        "options": ["Train the faithful", "Save the universe", "Protect the spice"],
+        "answer": 0
+    },
+    {
+        "question": "What is the universal language in the Dune universe?",
+        "options": ["Galach", "Ghola", "Gom jabbar"],
+        "answer": 0
+    }
+]

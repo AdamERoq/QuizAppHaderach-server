@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App Haderach</title>
+    <script>
+        const answers = [];
+        let question = -1;
+        let questions = null;
+
+        function getAnswer() {
+            if (document.getElementById('first').checked === true) {
+                return 0;
+            }
+
+            if (document.getElementById('second').checked === true) {
+                return 1;
+            }
+
+            if (document.getElementById('third').checked === true) {
+                return 2;
+            }
+
+            return -1;
+        }
+
+        function isLastQuestion() {
+            return (question === (questions.length - 1));
+        }
+        
+        function nextQuestion() {
+            // Increment the question counter
+            question++;
+
+            // Update number
+            document.getElementById('number').innerHTML = `Question ${question+1} of ${questions.length}`;
+
+            // Update question
+            document.getElementById('question').innerHTML = `<b>${questions[question].question}</b>`;
+
+            // Clear selection
+            document.getElementById('first').checked = false;
+            document.getElementById('second').checked = false;
+            document.getElementById('third').checked = false;
+
+            // Update options
+            document.getElementById('firstOption').innerHTML = questions[question].options[0];
+            document.getElementById('secondOption').innerHTML = questions[question].options[1];
+            document.getElementById('thirdOption').innerHTML = questions[question].options[2];
+
+            // Process the next button
+            document.getElementById('buttons').classList.remove('selected');
+            if (isLastQuestion()) {
+                document.getElementById('next').textContent = 'Submit';
+            }
+        }
+
+        async function onLoad() {
+            const response = await fetch('/api/v1/quiz');
+            questions = await response.json();
+            nextQuestion();
+        }
+
+        async function onNext() {
+            if (isLastQuestion()) {
+                // Mark the quiz
+                const body = JSON.stringify(answers);
+                const headers = {'Content-Type': 'application/json'};
+                const method = 'POST';
+                const response = await fetch('/api/v1/quiz', {body, headers, method});
+                const result = await response.json();
+
+                // Display the result
+                document.getElementById('card').innerHTML = ''+
+                    `You're grade is a <b>${result.grade}</b><br>`+
+                    `   - Mark: ${result.mark}<br>`+
+                    `   - Percentage: ${result.percentage}<br>`+
+                    '<br>'+
+                    'Click <a href="/">here</a> to restart!';
+            } else {
+                answers.push(getAnswer());
+                nextQuestion();
+            }
+        }
+
+        function onSelect() {
+            document.getElementById('buttons').classList.add('selected');
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: dune_rise;
+            src: url(/fonts/dune_rise);
+        }
+
+        body {
+            background-image: url("https://pbs.twimg.com/media/FEF6IZDVcAMzZ5L.jpg:large");        
+            color: black;   
+            font-family: dune_rise;
+            font-size: 24px;
+        }
+
+        button {
+            font-family: dune_rise;
+            font-size: 18px;
+            padding: 8px 8px 4px 8px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input[type="radio"] {
+            font: inherit;
+            height: 24px;
+            width: 24px;
+        }
+        
+        #buttons {
+            display: none;
+            float: right;
+            margin-right: 8px;
+            padding: 8px;
+        }
+
+        #buttons.selected {
+            display: inherit;
+        }
+
+        #card {
+            margin: auto;
+            position: relative;
+            max-width: 800px;
+            width: 80%;
+        }
+
+        #number {
+            display: inline-block;
+            margin: 4px;
+            padding: 4px;
+        }
+
+        #option {
+            margin-bottom: 4px;
+        }
+
+        #options {
+            margin: 12px 24px 12px 24px;
+        }
+
+        #question {
+            margin: 12px;
+        }
+    </style>
+</head>
+<body onload="onLoad()">
+    <header>
+        <h1>Quiz App Haderach</h1>
+    </header>
+    <div id="card">
+        <div id="number"></div>
+        <div id="question"></div>
+        <div id="options">
+            <div id="option">
+                <input type="radio" id="first" name="options" value="first" onclick="onSelect()">
+                <label id="firstOption" for="first"></label>
+            </div>
+
+            <div id="option">
+                <input type="radio" id="second" name="options" value="second" onclick="onSelect()">
+                <label id="secondOption" for="second"></label>
+            </div>
+        
+            <div id="option">
+                <input type="radio" id="third" name="options" value="third" onclick="onSelect()">
+                <label id="thirdOption" for="third"></label>
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="next" onclick="onNext()">Next</button>
+        </div>
+    </div>
+</body>
+</html>
