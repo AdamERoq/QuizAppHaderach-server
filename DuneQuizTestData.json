@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Who is the author of the book 'Dune'?",
+        "options": ["Louis Aragon", "Frank Herbert", "J. R. R. Tolkien"],
+        "answer": 1
+    },
+    {
+        "question": "Who is the primary protagonist in Dune?",
+        "options": ["Duke Leto", "Shaddam Corrino IV", "Paul Atreides"],
+        "answer": 2
+    },
+    {
+        "question": "What year is the story set in?",
+        "options": ["3051", "8743", "10191"],
+        "answer": 2
+    },
+    {
+        "question": "What is the other name of the planet Dune?",
+        "options": ["Arrakis", "Kaitain", "Caladan"],
+        "answer": 0
+    },
+    {
+        "question": "Which kind of planet is the planet Arrakis?",
+        "options": ["A desert planet", "An ocean planet", "A mountain planet"],
+        "answer": 0
+    },
+    {
+        "question": "Because it never rains on the planet Arrakis, what do most of the native birds drink?",
+        "options": ["Oil", "Blood", "Urine"],
+        "answer": 1
+    },
+    {
+        "question": "What is the relationship between Jessica and Duke Leto?",
+        "options": ["She is his concubine", "She is his daughter", "She is his sister"],
+        "answer": 0
+    },
+    {
+        "question": "Why did Bene Gesserit plan the breeding program?",
+        "options": ["To create a child for the royal power", "To create a hybrid between human and sandworm", "To create a super-being called the Kwisatz Haderach"],
+        "answer": 2
+    },
+    {
+        "question": "At the end of the book, which seat of power does Paul take?",
+        "options": ["God", "Emperor", "Warrior"],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following characters betrays Duke Leto?",
+        "options": ["Duncan Idaho", "Dr. Wellington Yueh", "The Shadout Mapes"],
+        "answer": 1
+    }
+]
